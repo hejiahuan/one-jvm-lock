@@ -13,7 +13,12 @@ public class Stock {
      */
     public boolean reduceStock(){
         if (num>0){
-            num--;
+            try {
+                Thread.sleep(1000);
+                num--;
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             return  true;
         }else {
             return  false;
