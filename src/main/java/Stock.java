@@ -1,3 +1,6 @@
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * 库存
  * @author HJH
@@ -6,6 +9,8 @@
 public class Stock {
 
     private static  int num=1;
+
+
 
     /**
      * 减少库存
